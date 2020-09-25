@@ -15,7 +15,7 @@ class SettingController extends AdminController
      *
      * @var string
      */
-    protected $title = '网站设置';
+    protected $title = '网站参数设置';
 
     /**
      * Make a grid builder.
@@ -32,10 +32,12 @@ class SettingController extends AdminController
         $grid->column('content', __('内容'))->label('info');
         $grid->column('key_word', __('关键词'))->label('default');
         $grid->column('is_display', __('是否显示'))->switch([
-            'on'  => ['value' => 1, 'text' => '打开', 'color' => 'primary'],
-            'off' => ['value' => 2, 'text' => '关闭', 'color' => 'default'],
+            'on'  => ['value' => 1, 'text' => '关闭', 'color' => 'primary'],
+            'off' => ['value' => 2, 'text' => '打开', 'color' => 'default'],
         ]);
         $grid->column('created_at', __('设置时间'));
+
+        $grid->column('updated_at', __('修改时间'));
 
         return $grid;
     }

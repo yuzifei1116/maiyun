@@ -3,9 +3,12 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Encore\Admin\Traits\DefaultDatetimeFormat;
 
 class Setting extends Model
 {
+
+    use DefaultDatetimeFormat;
     //
     /**
      * 与模型关联的表名
@@ -20,4 +23,7 @@ class Setting extends Model
      * @var array
      */
     protected $guarded = [];
+
+    public $timestamps = true;
+    
 }

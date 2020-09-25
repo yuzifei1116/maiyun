@@ -22,15 +22,9 @@ class TemplateShop extends Action
     public function html()
     {
         return <<<HTML
-        <a class="btn btn-sm btn-success template-shop">模板商城</a>
+        <a class="btn btn-sm btn-success template-shop" href="">模板商城</a>
 HTML;
     }
 
-    /**
-     * 展示得html
-     */
-    public function form()
-    {
-        
-    }
+    
 }

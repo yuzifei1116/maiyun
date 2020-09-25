@@ -15,3 +15,10 @@ Route::get('/', function () {
     // return view('welcome');
     dd('Request');
 });
+
+
+/**
+ * @version [<vector>] [<模板商城--页面>]
+ */
+Route::any('/template','Shop\TemplateController@template');
+

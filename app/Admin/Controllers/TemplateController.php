@@ -29,10 +29,9 @@ class TemplateController extends AdminController
 
         $grid->column('id', __('索引'));
         $grid->column('name', __('模板名'));
-        $grid->column('image', __('模板缩略图'))->image('',100,100)->help('模板缩略图');
-
+        $grid->column('image', __('模板缩略图'))->lightbox(['width' => 50, 'height' => 50]);
         $grid->tools(function (Grid\Tools $tools) {
-            $tools->append(new TemplateShop());
+            $tools->append('<a class="btn btn-sm btn-success template-shop" href="/template">商城模板</a>');
         });
 
         return $grid;
