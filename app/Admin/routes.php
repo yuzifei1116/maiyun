@@ -15,4 +15,9 @@ Route::group([
 
     $router->resource('settings', SettingController::class);
 
+    $router->resource('templates', TemplateController::class);
+
 });
+
+
+
