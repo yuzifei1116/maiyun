@@ -65,6 +65,7 @@ class TemplateController extends AdminController
 
         $form->text('name', __('模板名'));
         $form->image('image', __('模板缩略图'));
+        $form->text('href', __('对应方法--页面'))->required()->help('例如:/xuelunyan');
 
         return $form;
     }

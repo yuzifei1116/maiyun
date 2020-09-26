@@ -6,7 +6,7 @@
 <link href="style/style.css" rel="stylesheet" />
 <script src="js/jquery.js"></script>
 <script src="js/wow.min.js"></script>
-<script src="js/jqueryslider.js"></script>
+<script src="js/zuie_jqueryslider.js"></script>
 <script src="js/mousewheel.js"></script>
 <script src="js/zuie_easyscroll.js"></script>
 <script src="js/load.js"></script>
