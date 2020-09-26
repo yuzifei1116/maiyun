@@ -3,6 +3,7 @@
 namespace App\Observers;
 
 use App\Setting;
+use Carbon\Carbon;
 
 class SettingObserver
 {
@@ -28,14 +29,20 @@ class SettingObserver
      * @param  \App\app\Setting  $setting
      * @return void
      */
-    public function updateing(Setting $setting)
+    public function updated(Setting $setting)
     {
-        if(!empty($setting->id)){
-            if($setting->is_display == '1'){
-                Setting::update(['is_display'=>2]);
-                Setting::where('id',$setting->id)->update(['is_display'=>1]);
-            }
-        }
+        // if(!empty($setting->id)){
+        //     if($setting->is_display == '1'){
+        //         $data = Setting::get();
+        //         foreach($data as $k=>$v){
+        //             $v->is_display = 2;
+        //             $v->save();
+        //         }
+        //         $setting->is_display = 1;
+        //         $setting->created_at = Carbon::now();
+        //         $setting->save();
+        //     }
+        // }
     }
 
     /**

@@ -1,0 +1,14 @@
+.footer{ min-width: 1287px; height: 140px;padding:5px; text-align: center; color: #444; border-top: 1px solid #222; background: linear-gradient(#111,#000);}
+.footer .foot{ width: 100%; margin: 0 auto;height: 130px; box-sizing: border-box; padding-top: 14px; border: 1px solid #222;font-size:12px;}
+.footer .foott{ width: 1300px; margin: 0 auto;height: 130px; box-sizing: border-box; font-size:12px;}
+.footer .foota{ width: 200px;float:left;height: 130px; box-sizing: border-box;font-size:12px;}
+.footer .footb{ width: 87px;float:left;height: 100px; box-sizing: border-box;font-size:12px;}
+.footer .footb img{ width: 60px;float:left;height: 60px; margin-top:20px;font-size:12px;}
+.footer .foots{ width: 1000px; float:left;margin: 0 auto;height: 130px; box-sizing: border-box; font-size:12px;}
+.bshare-custom{ margin-bottom: 12px;}
+.bshare-custom .bshare-more{ color: #444!important;}
+.bshare-custom a{ color: #444!important;}
+.footer p{ margin-bottom: 12px;}
+.footer a{color: #444;font-size:12px;}
+.footer a:hover{ text-decoration: underline;font-size:12px;}
+.footer .ab{display:block;width:200px;margin:0 auto;height:20px;line-height: 20px;font-size:12px;}

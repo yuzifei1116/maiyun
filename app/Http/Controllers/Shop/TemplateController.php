@@ -18,4 +18,22 @@ class TemplateController extends Controller
     }
 
 
+    /**
+     * 血轮眼模板--页面
+     */
+    public function xuelunyan()
+    {
+        return view('template.xuelunyan');
+    }
+
+
+    /**
+     * 罪恶都市模板--页面
+     */
+    public function zuiedushi()
+    {
+        return view('template.zuiedushi');
+    }
+
+
 }

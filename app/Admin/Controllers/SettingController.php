@@ -7,6 +7,7 @@ use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
 use Encore\Admin\Show;
+use Carbon\Carbon;
 
 class SettingController extends AdminController
 {
@@ -36,8 +37,6 @@ class SettingController extends AdminController
             'off' => ['value' => 2, 'text' => '打开', 'color' => 'default'],
         ]);
         $grid->column('created_at', __('设置时间'));
-
-        $grid->column('updated_at', __('修改时间'));
 
         return $grid;
     }
@@ -79,9 +78,11 @@ class SettingController extends AdminController
 
         //保存前回调
         $form->saving(function (Form $form) {
+
             if($form->is_display == 'on'){
                 //...
                 Setting::where('id','<>',0)->update(['is_display'=>2]);
+                
             }
         });
         

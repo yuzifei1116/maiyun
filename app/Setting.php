@@ -18,7 +18,7 @@ class Setting extends Model
     protected $table = 'settings';
 
     /**
-     * 不可批量赋值的属性
+     * 黑名单
      *
      * @var array
      */

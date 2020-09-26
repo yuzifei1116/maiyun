@@ -276,8 +276,8 @@ return [
     |    "skin-red", "skin-red-light", "skin-black", "skin-black-light".
     |
     */
-    // 'skin' => 'skin-blue-light',
-    'skin' => 'skin-purple',
+    'skin' => 'skin-blue-light',
+    // 'skin' => 'skin-purple',
 
     /*
     |--------------------------------------------------------------------------
@@ -302,7 +302,7 @@ return [
     | This value is used to set the background image of login page.
     |
     */
-    'login_background_image' => 'https://wx1.sinaimg.cn/large/d315af46ly1gi9yjf7kmmj22n11bjqv8.jpg',
+    'login_background_image' => '/8.jpg',
 
     /*
     |--------------------------------------------------------------------------

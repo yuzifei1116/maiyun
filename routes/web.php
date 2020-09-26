@@ -22,3 +22,15 @@ Route::get('/', function () {
  */
 Route::any('/template','Shop\TemplateController@template');
 
+
+/**
+ * @version [<vector>] [<血轮眼--页面>]
+ */
+Route::any('/wheel','Shop\TemplateController@xuelunyan');
+
+
+/**
+ * @version [<vector>] [<罪恶都市--页面>]
+ */
+Route::any('/city','Shop\TemplateController@zuiedushi');
+
