@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Shop;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Template;
 
 class TemplateController extends Controller
 {
@@ -14,7 +15,10 @@ class TemplateController extends Controller
      */
     public function template()
     {
-        return view('admin.shop');
+
+        $data = Template::get();
+
+        return view('admin.shop',['data'=>$data]);
     }
 
 
