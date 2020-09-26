@@ -17,6 +17,8 @@ Route::group([
 
     $router->resource('templates', TemplateController::class);
 
+    $router->resource('logos', LogoController::class);
+
 });
 
 
