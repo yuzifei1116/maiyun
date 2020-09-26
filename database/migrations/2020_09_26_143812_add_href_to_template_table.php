@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddDomainNameToSettingsTable extends Migration
+class AddHrefToTemplateTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class AddDomainNameToSettingsTable extends Migration
      */
     public function up()
     {
-        Schema::table('settings', function (Blueprint $table) {
-
-            $table->bigInteger('template_id')->nullable()->comment('绑定网站模板');
+        Schema::table('Template', function (Blueprint $table) {
+            
+            $table->string('href')->nullable()->comment('网址方法--对应的视图');
 
         });
     }
@@ -27,7 +27,7 @@ class AddDomainNameToSettingsTable extends Migration
      */
     public function down()
     {
-        Schema::table('settings', function (Blueprint $table) {
+        Schema::table('Template', function (Blueprint $table) {
             //
         });
     }

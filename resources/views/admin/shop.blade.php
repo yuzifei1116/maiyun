@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>模板商城</title>
     <style>
          #list .box {
             width: 350px;
@@ -16,7 +16,7 @@
 
         #list .box img {
             width: 350px;
-            height: 200px;
+            height: 400px;
         }
 
         .h_box {
@@ -36,47 +36,14 @@
     <div>
         <h1 class="h_box">模板商城</h1>
         <ul id="list">
+            @foreach($data as $k=>$v)
             <li class="box">
-                <a href="https://www.baidu.com/">
-                    <img src="http://static.kayisu.com/Uploads/Attachment/2019-11-25/5ddbb77a7575f.jpg" alt="">
+                <a href="{{$v->href}}">
+                    <img src="{{$_ENV['APP_URL']}}/storage/{{$v->image}}" alt="">
                 </a>
+                <a href="">购买</a>
             </li>
-           
-             <li class="box">
-                 <a href="https://www.baidu.com/">
-                     <img src="http://static.kayisu.com/Uploads/Attachment/2019-11-25/5ddbb77a7575f.jpg" alt="">
-                 </a>
-             </li>
-             <li class="box">
-                 <a href="https://www.baidu.com/">
-                     <img src="http://static.kayisu.com/Uploads/Attachment/2019-11-25/5ddbb77a7575f.jpg" alt="">
-                 </a>
-             </li>
-             <li class="box">
-                 <a href="https://www.baidu.com/">
-                     <img src="http://static.kayisu.com/Uploads/Attachment/2019-11-25/5ddbb77a7575f.jpg" alt="">
-                 </a>
-             </li>
-             <li class="box">
-                 <a href="https://www.baidu.com/">
-                     <img src="http://static.kayisu.com/Uploads/Attachment/2019-11-25/5ddbb77a7575f.jpg" alt="">
-                 </a>
-             </li>
-             <li class="box">
-                 <a href="https://www.baidu.com/">
-                     <img src="http://static.kayisu.com/Uploads/Attachment/2019-11-25/5ddbb77a7575f.jpg" alt="">
-                 </a>
-             </li>
-             <li class="box">
-                 <a href="https://www.baidu.com/">
-                     <img src="http://static.kayisu.com/Uploads/Attachment/2019-11-25/5ddbb77a7575f.jpg" alt="">
-                 </a>
-             </li>
-             <li class="box">
-                 <a href="https://www.baidu.com/">
-                     <img src="http://static.kayisu.com/Uploads/Attachment/2019-11-25/5ddbb77a7575f.jpg" alt="">
-                 </a>
-             </li>
+            @endforeach
         </ul>
 
     </div>
