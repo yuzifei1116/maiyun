@@ -19,5 +19,7 @@
  */
 
 // Encore\Admin\Form::forget(['map', 'editor']);
-
+//引入css文件
 Admin::css('/css/admin.css?v='.time());
+// 覆盖视图
+app('view')->prependNamespace('admin', resource_path('views/admin/views'));

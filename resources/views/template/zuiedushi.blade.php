@@ -2,7 +2,9 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>品牌大服</title>
+<title>关键词</title>
+<meta name="keywords" content="短视频,搞笑视频,视频分享,免费视频,在线视频,预告片" />
+<meta name="description" content="提供最新最快的视频分享数据" />
 <link href="style/style.css" rel="stylesheet" />
 <script src="js/jquery.js"></script>
 <script src="js/wow.min.js"></script>
@@ -252,8 +254,8 @@ $(function(){
 
 
 <script src="http://ip.tanwan.com/index.php?action=ipinfo&format=js"></script>
-<script>
+<!-- <script>
     if( typeof(remote_ip_info)!='undefined' && remote_ip_info['ret']==1 ){
         document.title= '【'+remote_ip_info['city']+'老王传奇工作室】'+document.title;
     }
-</script>
+</script> -->
